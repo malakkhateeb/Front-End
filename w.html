@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="w.css" />
+</head>
+
+<body>
+    <div class="nav">
+        <div class="container">
+            <h1>DojoWeather</h1>
+            <p onclick="city(this)">Burbank</p>
+            <p onclick="city(this)">Chicago</p>
+            <p onclick="city(this)">Dollas</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="title">
+            <h2>San Jose</h2>
+            <div class="align">
+                <p>show temperature in</p>
+                <select id="change" onchange="changeTemp(this)">
+                    <option>C</option>
+                    <option>F</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="weather">
+            <div>
+                <h2>Today</h2>
+                <img src="some_rain.png" alt="rain" class="first-image" />
+                <p>some rain</p>
+            <div class="degree">
+                <span class="degreeOne">24°</span> <span class="degreeOne degreeTwo">18°</span>
+            </div>
+            </div>
+            <div>
+                <h2>Tomorrow</h2>
+                <img src="some_sun.png" alt="rain" class="first-image" />
+                <p>some sun</p>
+            <div class="degree">
+                <span class="degreeOne">27°</span> <span class="degreeOne degreeTwo">19°</span>
+            </div>
+            </div>
+            <div>
+                <h2>Friday</h2>
+                <img src="some_clouds.png" alt="rain" class="first-image" />
+                <p>some clouds</p>
+            <div class="degree">
+                <span class="degreeOne">21°</span> <span class="degreeOne degreeTwo">16°</span>
+            </div>
+            </div>
+            <div>
+                <h2>Saturday</h2>
+                <img src="some_sun.png" alt="rain" class="first-image" />
+                <p>some sun</p>
+            <div class="degree">
+                <span class="degreeOne">26°</span><span class="degreeOne degreeTwo">21°</span>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="cook" class="cookie">
+            <img src="cookie.png" alt="cookie pic" class="cookie-pic" />
+            <h2>Stop! Cookie time</h2>
+            <p>
+                We use cookies (sadly not the edible ones) to personlize<br>
+                content and ads, to provide social media features and to<br>
+                analyse our trraffic .<a href="read more.com">Read more...<a>
+            </p>
+            <button onclick="acceptMe('cook')" class="acceptme">I Accept</button>
+        </div>
+    </div>
+    <script src="w.js"></script>
+</body>
+</html>
